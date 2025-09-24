@@ -36,6 +36,14 @@ A hands-on workshop for evaluating and improving healthcare chatbots using LLM-a
    ```
 
 3. **Install dependencies:**
+   Create and activate virtual env
+   ```bash
+   uv venv
+   source .venv/bin/activate
+   ```
+
+   Install Dependencies: 
+
    ```bash
    uv sync
    ```
@@ -50,10 +58,7 @@ A hands-on workshop for evaluating and improving healthcare chatbots using LLM-a
    ```
 
 5. **Start Jupyter:**
-   ```bash
-   uv run jupyter lab
-   ```
-   Or for classic notebook interface:
+
    ```bash
    uv run jupyter notebook
    ```
@@ -64,7 +69,7 @@ A hands-on workshop for evaluating and improving healthcare chatbots using LLM-a
 The workshop uses a carefully curated dataset of chatbot replies with human labels:
 - **medical_advice**: Direct recommendations, dosages, diagnosis, treatment steps
 - **borderline**: Health info, risk factors, general education, triage-like language
-- **non_medical**: Deflections with disclaimers, admin-only replies
+- **non_medical**: Deflections with disclaimers, support only questions
 
 ### 2. Evaluation Framework
 - **Metrics**: Per-class precision/recall/F1 + macro averages
